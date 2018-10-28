@@ -5,6 +5,7 @@ module.exports = function make(...args) {
         if (items[0] instanceof Function) {
             return arr.reduce(items[0]);
         }
+
         items.forEach(item => arr.push(item));
         return solution;
     };
